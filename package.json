@@ -1,0 +1,46 @@
+{
+	"name": "bun-socks",
+	"version": "1.0.1",
+	"description": "Zero-dependency SOCKS5 fetch client for Bun, supporting HTTP/HTTPS, custom headers, and chunked encoding.",
+	"type": "module",
+	"main": "fetch.ts",
+	"module": "fetch.ts",
+	"types": "fetch.ts",
+	"scripts": {
+		"build": "tsc",
+		"test": "bun test *.test.ts",
+		"lint": "biome check . --fix",
+		"prepublishOnly": "bun run lint && bun run test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/174n/bun-socks.git"
+	},
+	"bugs": {
+		"url": "https://github.com/174n/bun-socks/issues"
+	},
+	"homepage": "https://github.com/174n/bun-socks#readme",
+	"keywords": [
+		"bun",
+		"socks5",
+		"proxy",
+		"fetch",
+		"http",
+		"https",
+		"network"
+	],
+	"author": "Your Name <your.email@example.com>",
+	"license": "MIT",
+	"files": [
+		"fetch.ts",
+		"LICENSE",
+		"README.md"
+	],
+	"devDependencies": {
+		"@biomejs/biome": "latest",
+		"@types/bun": "latest"
+	},
+	"engines": {
+		"bun": ">=1.0.0"
+	}
+}
